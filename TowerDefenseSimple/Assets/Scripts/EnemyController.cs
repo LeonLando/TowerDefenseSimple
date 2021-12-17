@@ -7,6 +7,7 @@ public class EnemyController : MonoBehaviour
     [SerializeField] private float Speed;  //Скорость врага
     public Transform[] WayPoints;  //Массив точек для передвижения
     [SerializeField] private int CurrentWayPointIndex = 0; //Индекс точки к которой движется враг
+    public int HP = 30;
      
     
 

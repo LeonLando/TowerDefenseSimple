@@ -15,4 +15,11 @@ public class BulletScript : MonoBehaviour
     {
         transform.position = Vector3.MoveTowards(transform.position, Target.position, Time.deltaTime * Speed);
     }
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.gameObject.transform == Target)
+        {
+            Target.GetComponent<EnemyController>()
+        }
+    }
 }
