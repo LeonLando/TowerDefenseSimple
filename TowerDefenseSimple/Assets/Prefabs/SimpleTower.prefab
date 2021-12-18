@@ -110,7 +110,7 @@ GameObject:
   - component: {fileID: 3330445087538680400}
   - component: {fileID: -4970515413472827285}
   m_Layer: 0
-  m_Name: Tower
+  m_Name: SimpleTower
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -275,7 +275,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 7c07ba7e180e37b47b11b98a82224c28, type: 2}
+  - {fileID: 2100000, guid: 003c25a4592fe78429cf4749f6360676, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -370,7 +370,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 7c07ba7e180e37b47b11b98a82224c28, type: 2}
+  - {fileID: 2100000, guid: d7b3c66da98794c4cbd84153f4b95ec5, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -431,8 +431,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8826322349977012579}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.01, y: 0.828, z: -0.00000013373}
-  m_LocalScale: {x: 12.609702, y: 7.565821, z: 12.609702}
+  m_LocalPosition: {x: -0.0099999, y: 0.828, z: -0.00000003821}
+  m_LocalScale: {x: 11.529485, y: 6.9176908, z: 6.7650256}
   m_Children: []
   m_Father: {fileID: 8447360524247114490}
   m_RootOrder: 2

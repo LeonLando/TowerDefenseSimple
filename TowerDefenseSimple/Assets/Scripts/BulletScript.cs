@@ -6,6 +6,8 @@ public class BulletScript : MonoBehaviour
 {
     [SerializeField] private float Speed;
     public Transform Target;
+    public TowerController Tower;
+    [SerializeField] private GameObject Bullet;
     void Start()
     {
         
@@ -13,13 +15,23 @@ public class BulletScript : MonoBehaviour
 
     void Update()
     {
-        transform.position = Vector3.MoveTowards(transform.position, Target.position, Time.deltaTime * Speed);
+        if (Target != null)
+        {
+            transform.position = Vector3.MoveTowards(transform.position, Target.position, Time.deltaTime * Speed);
+        }
+        else
+        {
+            Destroy(Bullet);
+        }
+        
+
     }
     private void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.transform == Target)
         {
-            Target.GetComponent<EnemyController>()
+            Target.GetComponent<EnemyHealthSCript>().Damage(Tower.Damage);
+            Destroy(Bullet);
         }
     }
 }

@@ -202,7 +202,7 @@ GameObject:
   - component: {fileID: 2911803213307461235}
   - component: {fileID: 6829024502348928099}
   - component: {fileID: 475218718561603054}
-  - component: {fileID: 8224200000733328177}
+  - component: {fileID: 565797965436656594}
   m_Layer: 0
   m_Name: TowerPlace
   m_TagString: Untagged
@@ -291,7 +291,7 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &8224200000733328177
+--- !u!114 &565797965436656594
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -300,13 +300,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 5611704137133190913}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 08a89b18da907d44093c971150fc8636, type: 3}
+  m_Script: {fileID: 11500000, guid: 86ab573eca7c5a5429afa56260f75a53, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Tower: {fileID: 3205423974826532258, guid: 2ff1a40644e8ecb459308d6045c2ca02, type: 3}
+  SimpleTower: {fileID: 3205423974826532258, guid: 2ff1a40644e8ecb459308d6045c2ca02, type: 3}
   CurrentTower: {fileID: 0}
   EmptyPoint: 1
   SpawnTowerPoint: {fileID: 6929962159737316794}
+  PlayerStats: {fileID: 0}
 --- !u!1 &6103883376705733920
 GameObject:
   m_ObjectHideFlags: 0

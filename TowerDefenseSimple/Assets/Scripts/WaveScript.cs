@@ -11,6 +11,8 @@ public class WaveScript : MonoBehaviour
     public float StartWaveTime; //Время до начала появления
     [SerializeField]  private int EnemyCount; //Счетчик появившихся префабов
     public Transform[] WayPoints; //Массив точек для передвижения
+    public GameObject HP;
+    public GameObject Canvas;
 
     void Start()
     {
@@ -30,5 +32,6 @@ public class WaveScript : MonoBehaviour
         EnemyCount++;
         GameObject Enemy = GameObject.Instantiate(EnemyPref, SpawnPoint.position, Quaternion.identity) as GameObject; //Создание префаба на точке спавна
         Enemy.GetComponent<EnemyController>().WayPoints = WayPoints; //Передача нужных точек для движения префабу
+        
     }
 }

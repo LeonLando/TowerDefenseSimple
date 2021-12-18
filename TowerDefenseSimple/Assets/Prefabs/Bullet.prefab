@@ -110,3 +110,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Speed: 10
   Target: {fileID: 0}
+  Tower: {fileID: 0}
+  Bullet: {fileID: 3066902526224383200}

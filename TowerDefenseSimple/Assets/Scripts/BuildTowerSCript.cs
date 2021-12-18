@@ -1,28 +1,34 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
-public class BuildTowerSCript : MonoBehaviour
+public class BuildTowerScript : MonoBehaviour
 {
-    [SerializeField] private GameObject Tower;
+    [SerializeField] private GameObject SimpleTower;
     [SerializeField] private GameObject CurrentTower;
     [SerializeField] private bool EmptyPoint = true;
     [SerializeField] private GameObject SpawnTowerPoint;
+    [SerializeField] private GameObject PlayerStats;
     
+
+
     void Start()
     {
+        PlayerStats = GameObject.FindGameObjectWithTag("Player");
         
     }
 
     void Update()
     {
-        
+
     }
     private void OnMouseDown()
     {
-        if (EmptyPoint)
+        if (EmptyPoint && PlayerStats.GetComponent<PlayerStatsScript>().Gold >= 30)
         {
-            CurrentTower = GameObject.Instantiate(Tower, SpawnTowerPoint.transform.position , Quaternion.identity) as GameObject;
+            CurrentTower = GameObject.Instantiate(SimpleTower, SpawnTowerPoint.transform.position, Quaternion.identity) as GameObject;
+            PlayerStats.GetComponent<PlayerStatsScript>().Gold -= 30;
             EmptyPoint = false;
         }
     }
