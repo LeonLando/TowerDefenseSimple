@@ -19,10 +19,6 @@ public class BuildTowerScript : MonoBehaviour
         
     }
 
-    void Update()
-    {
-
-    }
     private void OnMouseDown()
     {
         if (EmptyPoint && PlayerStats.GetComponent<PlayerStatsScript>().Gold >= 30)

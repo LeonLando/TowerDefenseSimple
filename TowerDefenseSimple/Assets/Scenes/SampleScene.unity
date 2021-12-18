@@ -911,7 +911,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4d4f638294599f04298fdd37d2d5e1d0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  WaveSize: 3
+  WaveSize: 8
   EnemyPref: {fileID: 185221656287965849, guid: 3d1f42728cd2ba84f8f77163eb7ddc4a, type: 3}
   EnemyInterval: 1
   SpawnPoint: {fileID: 71780897}
@@ -1093,9 +1093,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4d4f638294599f04298fdd37d2d5e1d0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  WaveSize: 3
+  WaveSize: 6
   EnemyPref: {fileID: 185221656287965849, guid: 3d1f42728cd2ba84f8f77163eb7ddc4a, type: 3}
-  EnemyInterval: 1
+  EnemyInterval: 1.5
   SpawnPoint: {fileID: 306941637}
   StartWaveTime: 0
   EnemyCount: 0
